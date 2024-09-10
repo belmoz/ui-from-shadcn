@@ -68,6 +68,6 @@ export const WithLabel: Story = {
 	),
 	args: {
 		...Default.args,
-		label: "",
+		label: "Label",
 	},
 };
