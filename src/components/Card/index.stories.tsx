@@ -50,3 +50,35 @@ export const Default: Story = {
 		),
 	},
 };
+
+export const WidthFixed: Story = {
+	args: {
+		className: "w-80",
+		children: (
+			<>
+				<CardHeader>
+					<CardTitle>Create project</CardTitle>
+					<CardDescription>Deploy your new project in one-click.</CardDescription>
+				</CardHeader>
+				<CardContent>
+					<form>
+						<div className='w-full flex flex-col gap-2'>
+							<div>
+								<Label htmlFor='name'>Name</Label>
+								<Input id='name' placeholder='Name of your project' />
+							</div>
+							<div>
+								<Label htmlFor='description'>Description</Label>
+								<Input id='description' placeholder='Description of your project' />
+							</div>
+						</div>
+					</form>
+				</CardContent>
+				<CardFooter className='flex justify-between'>
+					<Button variant='outline'>Cancel</Button>
+					<Button>Deploy</Button>
+				</CardFooter>
+			</>
+		),
+	},
+};
